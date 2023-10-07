@@ -1,5 +1,16 @@
 *{
   margin: 0;
   padding: 0;
+  text-align: none;
+  list-style: none;
   font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+:root{
+    --color-bg: white;
+    --color-soft: rgb(242, 238, 238);
+    --color-hover: rgb(239, 239, 239);
+    --color-border: rgb(114, 113, 113);
 }
