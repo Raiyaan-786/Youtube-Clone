@@ -9,7 +9,7 @@
   border: none;
 }
 :root{
-    --color-bg: white;
+    --color-bg: rgb(255, 255, 255);
     --color-soft: rgb(242, 238, 238);
     --color-hover: rgb(239, 239, 239);
     --color-border: rgb(114, 113, 113);
