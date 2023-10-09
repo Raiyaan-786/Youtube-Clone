@@ -7,12 +7,20 @@ import {
 
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
+import Sidebar from './Components/Sidebar/Sidebar';
+import { useState } from 'react';
 
 function App() {
+  const [openSidebar,setOpenSidebar] = useState(false);
+
+  const SidebarHandler = () => {
+    setOpenSidebar(!openSidebar);
+  }
   const Layout = () => {
     return (
       <div>
-        <Navbar/>
+        <Navbar Click = {SidebarHandler}/>
+        <Sidebar openSidebar = {openSidebar} Click = {SidebarHandler}/>
         <Outlet/>
       </div>
     )
