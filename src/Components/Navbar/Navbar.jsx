@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
@@ -9,11 +9,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({Click}) => {
   return (
     <>
       <nav>
-        <div className="bar-logo">
+        <div className="bar-logo" onClick={Click}>
           <div className="nicon">
             <FontAwesomeIcon icon={faBars} size="lg" />
           </div>

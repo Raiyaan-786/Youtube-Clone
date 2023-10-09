@@ -1,11 +1,11 @@
 import React from 'react'
 import './Home.css'
-import Sidebar from '../../Components/Sidebar/Sidebar'
+import DefaultSidebar from '../../Components/DefaultSidebar/DefaultSidebar'
 const Home = () => {
   return (
     <div className='home-container'>
         <div className="home-left">
-            <Sidebar/>
+          <DefaultSidebar/>
         </div>
         <div className="home-right">
             Home
