@@ -1,0 +1,74 @@
+.profile-menu{
+    overflow-y: scroll;
+    top: 8px;
+    right: 71px;
+    position: absolute;
+    background-color: #ffffff;
+    height: 643px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 32px 0px rgba(0,0,0,0.1);
+    transition: 0.8s;
+    display:block;
+  }
+  .user-info{
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    padding: 16px;
+    height: 72px;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    border-bottom: 0.5px solid rgb(228, 226, 226)
+  }
+  .user-icon img{
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    margin-right: 16px;
+  }
+
+  #manage-account{
+    cursor: pointer;
+    padding-top: 5px;
+    font-size: 13px;
+    color: #065fd4;
+  }
+  .user-settings{  
+    height: auto;
+    padding: 8px 0;
+    width: 292px;
+    border-bottom: 0.5px solid rgb(228, 226, 226)
+  }
+  .user-options{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 240px;
+    padding: 0 36px 0 16px;
+    font-size: 14px;
+    font-weight: 300;
+    transition: 0.1s;
+  }
+  .user-options:hover{
+    cursor: pointer;
+    background-color: #efefef;
+  }
+
+  .profile-menu::-webkit-scrollbar{
+    width: 5px;
+  }
+  .profile-menu::-webkit-scrollbar:hover{
+    width: 5px;
+  }
+  .profile-menu::-webkit-scrollbar-thumb:hover {
+    background: #888;
+    border-radius: 10px;
+  }
+
+  
+  .angle-right{
+    align-self: end;
+  }

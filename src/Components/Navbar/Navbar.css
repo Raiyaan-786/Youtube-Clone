@@ -1,6 +1,5 @@
 nav {
   background-color: var(--color-bg);
-  /* position: fixed; */
   position: sticky;  
   top: 0;
   display: flex;
@@ -8,13 +7,13 @@ nav {
   justify-content: space-between;
   height: 55px;
   width: 100%;
-  
 }
 .bar-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 4px;
+  padding-right: 40px;
 }
 .logo img {
   padding-top: 3px;
@@ -60,7 +59,7 @@ nav {
     box-shadow: 0px 1px 1px 0px #cdcdcd;
     
 }
-.nicon {
+.nav-icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,15 +72,19 @@ nav {
 }
 #mic{
     background-color: #efefef;
-   
 }
 #mic:hover{
     background-color: #dfdfdf;
 }
-.nicon:hover{
+.nav-icons:hover{
     background-color: #dfdfdf;
 }
-.nicon img {
+#nicon-image img{
+  background-color: #ffffff;
+  height: 36px;
+  width: 36px;
+}
+.nav-icons img {
   width: 40px;
   height: 40px;
   object-fit: cover;
@@ -92,70 +95,3 @@ nav {
   display: flex;
   align-items: center;
 }
-.user-detail{
-  overflow: scroll;
-  top: 8px;
-  right: 71px;
-  position: absolute;
-  background-color: #ffffff;
-  height: 643px;
-  width: 300px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 32px 0px rgba(0,0,0,0.1);
-  transition: 0.8s;
-  display:block;
-}
-
-.user-info{
-  padding: 16px;
-  height: 72px;
-  font-size: 15px;
-  font-weight: 400;
-  display: flex;
-  /* border-bottom: 1px solid rgb(233, 233, 233); */
-  border-bottom: 0.5px solid rgb(228, 226, 226)
-}
-#profile{
-  padding: 4px 0 0 0;
-}
-#manage-account{
-  cursor: pointer;
-  padding-top: 5px;
-  font-size: 13px;
-  color: #065fd4;
-}
-
-.more-details{
-  
-  /* height: 160px; */
-  height: auto;
-  padding: 8px 0;
-  width: 292px;
-  border-bottom: 0.5px solid rgb(228, 226, 226)
-}
-
-.profile-options{
-  gap: 20px;
-  display: flex;
-  align-items: center;
-  height: 40px;
-  width: 240px;
-  padding: 0 36px 0 16px;
-  font-size: 14px;
-  font-weight: 300;
-  transition: 0.1s;
-}
-.profile-options:hover{
-  cursor: pointer;
-  background-color: #efefef;
-}
-.user-detail::-webkit-scrollbar{
-  width: 0;
-}
-/* .extra-details{
-  overflow: scroll;
-} */
-#md-icon{
-  height: 20px;
-  width: 20px;
- }
