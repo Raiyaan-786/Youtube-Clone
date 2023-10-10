@@ -28,7 +28,7 @@ import {
   faUserPen,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Navbar = () => {
+const Navbar = ({Click}) => {
   const [profile, setProfile] = useState(false);
   const handleProfileClick = () => {
     if (profile == false) setProfile(true);
@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <>
       <nav onClick={handleProfileClick2}>
-        <div className="bar-logo">
+        <div className="bar-logo" onClick={Click}>
           <div className="nicon">
             <FontAwesomeIcon icon={faBars} size="lg" />
           </div>
