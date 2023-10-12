@@ -1,6 +1,7 @@
 .default-Sidebar-Container{
+    top: 60px;
+    position: sticky;
     width: 70px;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +16,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding: 16px 5px;
+    padding: 18px 5px;
     border-radius: 7px;
 }
 .default-Sidebar-section:hover{

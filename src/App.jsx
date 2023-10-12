@@ -23,7 +23,6 @@ function App() {
       <div className='App-container'>
         <Navbar Click = {SidebarHandler}/>
         <Backdrop Click = {SidebarHandler} openSidebar = {openSidebar}/>
-        <DefaultSidebar/>
         <Sidebar openSidebar = {openSidebar} Click = {SidebarHandler}/>
         <Outlet/>
       </div>
