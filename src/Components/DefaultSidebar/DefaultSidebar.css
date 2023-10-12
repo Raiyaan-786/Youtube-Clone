@@ -1,0 +1,29 @@
+.default-Sidebar-Container{
+    width: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 5px 0px;
+    padding: 5px 0px;
+}
+.default-Sidebar-section{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 16px 5px;
+    border-radius: 7px;
+}
+.default-Sidebar-section:hover{
+    background-color: var(--color-hover);
+}
+.default-Sidebar-section span{
+    font-size: 8px;
+}
+.sidebar-icons{
+    font-size: 18px;
+}

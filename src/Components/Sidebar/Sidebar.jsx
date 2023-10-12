@@ -5,6 +5,7 @@ import { faAngleDown, faBars, faCirclePlay, faCircleQuestion, faClapperboard, fa
 
 const Sidebar = ({openSidebar,Click}) => {
   return (
+    <div>
     <div className={openSidebar?"sidebar-container sidebar-collapse":"sidebar-container"}>
       <div className='sidebar-section-nav'>
         <div className='sidebar-content-nav'>
@@ -192,6 +193,7 @@ const Sidebar = ({openSidebar,Click}) => {
         <p>Terms PrivacyPolicy & SafetyHow YouTube worksTest new features</p>
         <p>© 2023 Inzamam-Raiyaan</p>
       </div>
+    </div>
     </div>
   )
 }

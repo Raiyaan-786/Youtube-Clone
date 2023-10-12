@@ -10,6 +10,7 @@ import Home from './Pages/Home/Home';
 import Sidebar from './Components/Sidebar/Sidebar';
 import { useState } from 'react';
 import Backdrop from './Components/Sidebar/Backdrop';
+import DefaultSidebar from './Components/DefaultSidebar/DefaultSidebar';
 
 function App() {
   const [openSidebar,setOpenSidebar] = useState(false);
@@ -19,9 +20,10 @@ function App() {
   }
   const Layout = () => {
     return (
-      <div>
+      <div className='App-container'>
         <Navbar Click = {SidebarHandler}/>
         <Backdrop Click = {SidebarHandler} openSidebar = {openSidebar}/>
+        <DefaultSidebar/>
         <Sidebar openSidebar = {openSidebar} Click = {SidebarHandler}/>
         <Outlet/>
       </div>
