@@ -1,0 +1,34 @@
+.slider-feed{
+    z-index: -1;
+    user-select: none;
+    background-color: var(--color-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    position: fixed;
+    left: 80px;
+    width: auto;
+    padding: 0 18px;
+}
+.feed-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.feed-item{
+   cursor: pointer;
+   background-color:#efefef ;
+   border-radius: 8px;
+   padding: 4px 12px;
+   white-space: nowrap;
+   color:rgb(36, 36, 36);
+   font-size: 14px;
+   font-weight: 500;
+}
+.feed-item-active{
+    background-color: black;
+    color: white;
+}
+
