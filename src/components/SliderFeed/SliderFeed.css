@@ -6,11 +6,9 @@
     justify-content: center;
     height: 56px;
     position: fixed;
-    left: 80px;
     width: auto;
     padding: 0 18px;
     /* background-color: red; */
-    z-index: -1;
 
 }
 .feed-items{

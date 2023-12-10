@@ -1,15 +1,14 @@
 import React from 'react';
 import "./SliderFeed.css";
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft, faAngleRight, faBars, faBell, faVideoCamera } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft, faAngleRight} from "@fortawesome/free-solid-svg-icons";
 const SliderFeed = () => {
     
 return(
     <div className='slider-feed'>
-        <div className="nav-icons">
+        {/* <div className="nav-icons">
             <FontAwesomeIcon icon={faAngleLeft} size="lg" />
-        </div>
+        </div> */}
         <div className="feed-items">
             <div className='feed-item feed-item-active'>All</div>
             <div className='feed-item'>Music</div>
