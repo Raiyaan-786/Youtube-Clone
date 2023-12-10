@@ -21,9 +21,14 @@ function App() {
     return (
       <div className='App-container'>
         <Navbar Click = {SidebarHandler}/>
-        <Sidebar openSidebar = {openSidebar} />
-        <DefaultSidebar openSidebar = {!openSidebar}/>
-        <Outlet/>
+        <div className='main-container'>
+          <div className='main-sidebars'>
+            <Sidebar openSidebar = {openSidebar} />
+            <DefaultSidebar openSidebar = {!openSidebar}/>
+          </div>
+          <Outlet/>
+        </div>
+        
       </div>
     )
   }

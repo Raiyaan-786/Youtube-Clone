@@ -6,7 +6,7 @@ import { faAngleDown, faCirclePlay, faCircleQuestion, faClapperboard, faClock, f
 const Sidebar = ({openSidebar}) => {
   return (
     <div>
-    <div className={openSidebar?"sidebar-container ":"sidebar-container sidebar-collapse"}>
+    <div className={openSidebar?"sidebar-container sidebar-collapse":"sidebar-container "}>
       <div className="sidebar-section">
         <div className='sidebar-content'>
           <FontAwesomeIcon icon={faHouse} className='icons'/>

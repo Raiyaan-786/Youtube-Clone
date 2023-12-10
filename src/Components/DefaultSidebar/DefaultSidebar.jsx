@@ -5,7 +5,7 @@ import { faCirclePlay, faHome, faMoneyBill, faPhotoFilm } from '@fortawesome/fre
 
 const DefaultSidebar = ({openSidebar}) => {
   return (
-    <div className={!openSidebar?"default-Sidebar-Container default-sidebar-collapse":"default-Sidebar-Container "}>
+    <div className={!openSidebar?" default-Sidebar-Container ":"default-sidebar-collapse"}>
       <div className='default-Sidebar-section'>
         <FontAwesomeIcon icon={faHome}  className='sidebar-icons'/>
         <span>Home</span>
