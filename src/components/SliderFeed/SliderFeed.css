@@ -1,5 +1,4 @@
 .slider-feed{
-    z-index: -1;
     user-select: none;
     background-color: var(--color-bg);
     display: flex;
@@ -10,6 +9,9 @@
     left: 80px;
     width: auto;
     padding: 0 18px;
+    /* background-color: red; */
+    z-index: -1;
+
 }
 .feed-items{
     display: flex;

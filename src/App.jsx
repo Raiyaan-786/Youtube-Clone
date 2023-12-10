@@ -9,7 +9,6 @@ import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
 import Sidebar from './Components/Sidebar/Sidebar';
 import { useState } from 'react';
-import Backdrop from './Components/Sidebar/Backdrop';
 import DefaultSidebar from './Components/DefaultSidebar/DefaultSidebar';
 
 function App() {
@@ -22,8 +21,8 @@ function App() {
     return (
       <div className='App-container'>
         <Navbar Click = {SidebarHandler}/>
-        <Backdrop Click = {SidebarHandler} openSidebar = {openSidebar}/>
-        <Sidebar openSidebar = {openSidebar} Click = {SidebarHandler}/>
+        <Sidebar openSidebar = {openSidebar} />
+        <DefaultSidebar openSidebar = {!openSidebar}/>
         <Outlet/>
       </div>
     )

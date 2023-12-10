@@ -3,9 +3,9 @@ import './DefaultSidebar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCirclePlay, faHome, faMoneyBill, faPhotoFilm } from '@fortawesome/free-solid-svg-icons'
 
-const DefaultSidebar = () => {
+const DefaultSidebar = ({openSidebar}) => {
   return (
-    <div className='default-Sidebar-Container'>
+    <div className={!openSidebar?"default-Sidebar-Container default-sidebar-collapse":"default-Sidebar-Container "}>
       <div className='default-Sidebar-section'>
         <FontAwesomeIcon icon={faHome}  className='sidebar-icons'/>
         <span>Home</span>

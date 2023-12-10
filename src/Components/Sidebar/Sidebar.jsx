@@ -1,24 +1,12 @@
 import React from 'react'
 import './Sidebar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDown, faBars, faCirclePlay, faCircleQuestion, faClapperboard, faClock, faClockRotateLeft, faFilm, faFire, faFlag, faGamepad, faGear, faGraduationCap, faHeadphones, faHouse, faMoneyBill, faMusic, faNewspaper, faPaperPlane, faPhotoFilm, faPodcast, faRss, faThumbsUp, faTrophy, faTv, faVestPatches, faVideo } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown, faCirclePlay, faCircleQuestion, faClapperboard, faClock, faClockRotateLeft, faFilm, faFire, faFlag, faGamepad, faGear, faGraduationCap, faHeadphones, faHouse, faMoneyBill, faMusic, faNewspaper, faPaperPlane, faPhotoFilm, faPodcast, faRss, faThumbsUp, faTrophy, faTv, faVestPatches, faVideo } from '@fortawesome/free-solid-svg-icons'
 
-const Sidebar = ({openSidebar,Click}) => {
+const Sidebar = ({openSidebar}) => {
   return (
     <div>
-    <div className={openSidebar?"sidebar-container sidebar-collapse":"sidebar-container"}>
-      <div className='sidebar-section-nav'>
-        <div className='sidebar-content-nav'>
-          <div className='sidebar-nicon'>
-            <FontAwesomeIcon icon={faBars} className='side-nav-icons' onClick={Click}/>
-          </div>
-          <div className="nav-logo">
-            <img src="logo/logo-light-mode1.png" alt="logo" />
-          </div>
-        </div>
-      </div>
-
-
+    <div className={openSidebar?"sidebar-container ":"sidebar-container sidebar-collapse"}>
       <div className="sidebar-section">
         <div className='sidebar-content'>
           <FontAwesomeIcon icon={faHouse} className='icons'/>

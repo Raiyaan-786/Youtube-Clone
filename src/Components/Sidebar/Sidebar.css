@@ -1,8 +1,8 @@
 .sidebar-container{
     position: absolute;
-    top: 0px;
+    top: 55px;
     left: 0px;
-    width: 225px;
+    width: 200px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -13,12 +13,14 @@
     overflow-x: hidden;
     transform: translateX(-100%);
     transition: all 0.4s ease-out;
-    z-index: 2 ;
     background-color: var(--color-bg);
     /* background-color: red; */
 }
+.sidebar-collapse{
+    transform: translateX(0%);
+}
 ::-webkit-scrollbar{
-    width: 10px;
+    width: 8px;
     
 }
 ::-webkit-scrollbar:hover{
@@ -27,9 +29,6 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #888;
     border-radius: 15px;
-}
-.sidebar-collapse{
-    transform: translateX(0%);
 }
 .sidebar-section{
     width: 100%;
