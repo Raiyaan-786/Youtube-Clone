@@ -1,0 +1,30 @@
+.ShortCardContainer{
+    width: 230px;
+    height: 520px;
+    /* border: 1px solid black; */
+    /* background-color: red ; */
+    border-radius: 15px;
+    margin: 15px 10px;
+}
+.ShortCardImg{
+    width: 230px;
+    height: 420px;
+}
+.ShortCardImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.ShortCardContent{
+    /* display: flex; */
+    margin: 10px 0px;
+}
+.ShortCardContent h5{
+    font-size: 14px;
+    font-weight: 500;
+}
+.ShortCardContent p{
+    font-size: 14px;
+    color: rgb(106, 104, 104);
+}

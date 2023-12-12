@@ -9,5 +9,10 @@
     overflow-x: hidden;
 }
 .home-items{
+    display: flex;
+    padding: 20px;
+}
+.shorts-items{
+    display: flex;
     padding: 20px;
 }

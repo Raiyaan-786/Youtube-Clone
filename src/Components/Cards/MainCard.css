@@ -1,0 +1,41 @@
+.CardContainer{
+    width: 400px;
+    height: 350px;
+    /* border: 1px solid black; */
+    /* background-color: red ; */
+    border-radius: 15px;
+    margin: 15px 8px;
+}
+.CardImg{
+    width: 400px;
+    height: 230px;
+}
+.CardImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.CardContent{
+    display: flex;
+    margin: 10px 0px;
+}
+.CardProfile{
+    width: 35px;
+    height: 35px;
+    margin: 0px 15px 0px 0px;
+}
+.CardProfile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.CardInfo h5{
+    font-size: 18px;
+    font-weight: 500;
+}
+.CardInfo p{
+    font-size: 14px;
+    color: rgb(106, 104, 104);
+}
