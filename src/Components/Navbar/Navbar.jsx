@@ -34,7 +34,7 @@ const Navbar = ({ Click }) => {
         {/* logo section starts here */}
         <div className="bar-logo" onClick={Click}>
           <div className="nav-icons"><FontAwesomeIcon icon={faBars} size="lg" /></div>
-          <div className="logo"><img src="logo/logo-light-mode1.png" alt="logo" /></div>
+          <div className="logo"><img src="logo/logo-light-mode-n.png" alt="logo" /></div>
         </div>
         {/* logo section ends here */}
 
