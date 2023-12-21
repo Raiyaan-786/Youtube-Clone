@@ -8,8 +8,6 @@
     position: fixed;
     width: auto;
     padding: 0 18px;
-    /* background-color: red; */
-
 }
 .feed-items{
     display: flex;
