@@ -1,7 +1,7 @@
 import React from "react";
 import "./Profile.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleQuestion, faGear, faCircleExclamation, faRightToBracket, faKeyboard, faGlobe, faLanguage, faMoon, faCircleDollarToSlot, faUserShield, faUserGroup, faSquareCaretRight, faAngleRight, faUserLock } from "@fortawesome/free-solid-svg-icons";
+import { faCircleQuestion, faGear, faCircleExclamation, faRightToBracket, faKeyboard, faGlobe, faLanguage, faMoon, faCircleDollarToSlot, faUserShield, faUserGroup, faSquareCaretRight, faAngleRight, faUserLock, faTvAlt, faTv } from "@fortawesome/free-solid-svg-icons";
 
 export default function Profile({ profile }) {
   return (
@@ -54,7 +54,7 @@ export default function Profile({ profile }) {
 
           <div className="user-options">
             <div className="user-options-icons">
-              <FontAwesomeIcon icon={faSquareCaretRight} size="lg" />
+              <FontAwesomeIcon icon={faTv} size="lg" />
             </div>
             <p>YouTube Studio</p>
           </div>

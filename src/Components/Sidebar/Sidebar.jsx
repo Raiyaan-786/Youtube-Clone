@@ -1,23 +1,28 @@
 import React from 'react'
 import './Sidebar.css'
+import { TbBrandYoutubeKids } from "react-icons/tb";
+import { SiYoutubeshorts,SiYoutubemusic } from "react-icons/si";
+import { MdSubscriptions} from "react-icons/md";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDown, faCirclePlay, faCircleQuestion, faClapperboard, faClock, faClockRotateLeft, faFilm, faFire, faFlag, faGamepad, faGear, faGraduationCap, faHeadphones, faHouse, faMoneyBill, faMusic, faNewspaper, faPaperPlane, faPhotoFilm, faPodcast, faRss, faThumbsUp, faTrophy, faTv, faVestPatches, faVideo } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown, faAngleRight, faBagShopping, faCirclePlay, faCircleQuestion, faClapperboard, faClock, faClockRotateLeft, faExclamationCircle, faFilm, faFire, faFlag, faGamepad, faGear, faGraduationCap, faHeadphones, faHouse, faLightbulb, faMoneyBill, faMusic, faNewspaper, faPaperPlane, faPhotoFilm, faPodcast, faRss, faThumbsUp, faTrophy, faTv, faUserCircle, faUsersCog, faUsersRectangle, faVestPatches, faVideo } from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = ({openSidebar}) => {
   return (
     <div>
     <div className={openSidebar?"sidebar-container sidebar-collapse":"sidebar-container "}>
       <div className="sidebar-section">
-        <div className='sidebar-content'>
+        <div className='sidebar-content sidebar-content-active'>
           <FontAwesomeIcon icon={faHouse} className='icons'/>
           Home
         </div>
         <div className='sidebar-content'>
-          <FontAwesomeIcon icon={faCirclePlay} className='icons'/>
+        <SiYoutubeshorts className='icons nri'/>
+          {/* <FontAwesomeIcon icon={faCirclePlay} className='icons'/> */}
           Shorts
         </div>
         <div className='sidebar-content'>
-          <FontAwesomeIcon icon={faMoneyBill} className='icons'/>
+        <MdSubscriptions className='icons nri'/>
+          {/* <FontAwesomeIcon icon={faMoneyBill} className='icons'/> */}
           Subscription
         </div>
       </div>
@@ -26,8 +31,12 @@ const Sidebar = ({openSidebar}) => {
 
       <div className="sidebar-section">
         <div className='sidebar-content'>
-          <FontAwesomeIcon icon={faPhotoFilm} className='icons'/>
-          Library
+         <p>You</p>
+          <FontAwesomeIcon icon={faAngleRight} className='icons'/>
+        </div>
+        <div className='sidebar-content'>
+          <FontAwesomeIcon icon={faUserCircle} className='icons'/>
+         Your channel
         </div>
         <div className='sidebar-content'>
           <FontAwesomeIcon icon={faClockRotateLeft} className='icons'/>
@@ -41,10 +50,10 @@ const Sidebar = ({openSidebar}) => {
           <FontAwesomeIcon icon={faClock} className='icons'/>
           Watch Later 
         </div>
-        <div className='sidebar-content'>
+        {/* <div className='sidebar-content'>
           <FontAwesomeIcon icon={faThumbsUp} className='icons'/>
           Liked Videos
-        </div>
+        </div> */}
         <div className='sidebar-content'>
           <FontAwesomeIcon icon={faAngleDown} className='icons'/>
           Show more
@@ -77,7 +86,7 @@ const Sidebar = ({openSidebar}) => {
         </div>
         <div className='sidebar-content'>
           <FontAwesomeIcon icon={faAngleDown} className='icons sicons'/>
-          Show more
+          Show 43 more
         </div>
       </div>
 
@@ -90,16 +99,16 @@ const Sidebar = ({openSidebar}) => {
           Trending
         </div>
         <div className='sidebar-content'>
-          <FontAwesomeIcon icon={faCirclePlay}  className='icons'/>
+          <FontAwesomeIcon icon={faBagShopping}  className='icons'/>
           Shopping
         </div>
         <div className='sidebar-content'>
-          <FontAwesomeIcon icon={faHeadphones} className='icons' />
+          <FontAwesomeIcon icon={faMusic} className='icons' />
           Music
         </div>
         <div className='sidebar-content'>
           <FontAwesomeIcon icon={faFilm} className='icons' />
-          Films
+          Movies
         </div>
         <div className='sidebar-content'>
           <FontAwesomeIcon icon={faRss} className='icons' />
@@ -115,10 +124,10 @@ const Sidebar = ({openSidebar}) => {
         </div>
         <div className='sidebar-content'>
           <FontAwesomeIcon icon={faTrophy} className='icons' />
-          Sport 
+          Sports 
         </div>
         <div className='sidebar-content'>
-          <FontAwesomeIcon icon={faGraduationCap} className='icons' />
+          <FontAwesomeIcon icon={faLightbulb} className='icons' />
           Learing
         </div>
         <div className='sidebar-content'>
@@ -127,29 +136,31 @@ const Sidebar = ({openSidebar}) => {
         </div>
         <div className='sidebar-content'>
           <FontAwesomeIcon icon={faPodcast} className='icons' />
-          Podcast
+          Podcasts
         </div>
       </div>
 
       <hr />
 
       <div className="sidebar-section">
-        <span>More from Youtube</span>
+        <span>More from Mytube</span>
         <div className='sidebar-content'>
           <FontAwesomeIcon icon={faCirclePlay}  className='icons col-icons'/>
-          Youtube Premium
+          Mytube Premium
         </div>
         <div className='sidebar-content'>
-          <FontAwesomeIcon icon={faTv}  className='icons col-icons'/>
-          Youtube Studio
+          <FontAwesomeIcon icon={faTv}  className='icons col-icons' id='icon-studio'/>
+          Mytube Studio
         </div>
         <div className='sidebar-content'>
-          <FontAwesomeIcon icon={faMusic} className='icons col-icons' />
-          Youtube Music
+        <SiYoutubemusic className='icons col-icons'/>
+          {/* <FontAwesomeIcon icon={faMusic} className='icons col-icons' /> */}
+          Mytube Music
         </div>
-        <div className='sidebar-content'>
-          <FontAwesomeIcon icon={faClapperboard} className='icons col-icons' />
-          Youtube Kids
+        <div className='sidebar-content '>
+        <TbBrandYoutubeKids className='icons col-icons'/>
+          {/* <FontAwesomeIcon icon={faClapperboard} className='icons col-icons' /> */}
+          Mytube Kids
         </div>
       </div>
 
@@ -169,7 +180,7 @@ const Sidebar = ({openSidebar}) => {
           Help 
         </div>
         <div className='sidebar-content'>
-          <FontAwesomeIcon icon={faPaperPlane} className='icons' />
+          <FontAwesomeIcon icon={faExclamationCircle} className='icons' />
           Send Feedback
         </div>
       </div>
@@ -177,9 +188,12 @@ const Sidebar = ({openSidebar}) => {
       <hr />
 
       <div className="sidebar-section">
+        <br />
         <p>About Press Copyright Contact us Creator Advertise Developers</p>
-        <p>Terms PrivacyPolicy & SafetyHow YouTube worksTest new features</p>
-        <p>© 2023 Inzamam-Raiyaan</p>
+        <br />
+        <p>Terms PrivacyPolicy & SafetyHow MyTube worksTest new features</p>
+        <br />
+        <p id='copyright'>© 2023 Inzamam-Raiyaan</p>
       </div>
     </div>
     </div>

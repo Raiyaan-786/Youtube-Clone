@@ -1,14 +1,14 @@
 .default-Sidebar-Container{
     top: 60px;
     position: sticky;
-    width: 70px;
+    width: 72px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
-    margin: 5px 0px;
-    padding: 5px 0px;
+    /* gap: 20px; */
+    margin: 7px 0px;
+    padding: 0.5px 0px;
 }
 .default-sidebar-collapse{
     display: none;
@@ -19,15 +19,19 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding: 18px 5px;
-    border-radius: 7px;
+    padding: 18px 9px;
+    border-radius: 9px;
 }
 .default-Sidebar-section:hover{
     background-color: var(--color-hover);
 }
 .default-Sidebar-section span{
-    font-size: 8px;
+    padding-top: 9px;
+    font-size: 9.5px;
 }
 .sidebar-icons{
-    font-size: 18px;
+    font-size: 17px;
+}
+.nri{
+    font-size: 21px;
 }

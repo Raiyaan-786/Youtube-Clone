@@ -13,7 +13,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 5px;
+  padding-left: 6px;
   padding-right: 29px;
 }
 .logo img {
@@ -71,4 +71,15 @@ nav {
 }
 .nav-icons:hover .icon-info,.search-info:hover .icon-info{
   visibility: visible;
+}
+.icon-badge{
+  position: absolute;
+  top: 10px;
+  right: 97px;
+  padding: 0 3px;
+  font-size: 12px;
+  background-color: red;
+  border-radius: 15px;
+  border: 2px solid white;
+  color:white;
 }

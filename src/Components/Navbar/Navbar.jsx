@@ -46,7 +46,7 @@ const Navbar = ({ Click }) => {
          
         <div id="user">
           <div className="nav-icons"><FontAwesomeIcon icon={faUpload} size="lg" /><span className="icon-info">Create</span></div>
-          <div className="nav-icons" onClick={handleNotifications}><FontAwesomeIcon icon={faBell} size="lg" /><span className="icon-info">Notifications</span></div>
+          <div className="nav-icons" onClick={handleNotifications}><FontAwesomeIcon icon={faBell} size="lg" /><span className="icon-badge">9+</span><span className="icon-info">Notifications</span></div>
           <div className="nav-icons" id="nicon-image" onClick={handleProfileClick} style={{ background: profile ? "blue" : "white", }}>
             <img src="logo/profile.jpeg" alt="" />
           </div>
