@@ -13,14 +13,15 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 4px;
-  padding-right: 40px;
+  padding-left: 5px;
+  padding-right: 29px;
 }
 .logo img {
-  padding-top: 3px;
+  user-select: none;
+  padding-top: 6.5px;
   padding-right: 6px;
-  height: 28px;
-  width: 100px;
+  height: 43px;
+  width: 137px;
 }
 
 .nav-icons {
@@ -57,6 +58,7 @@ nav {
 /* for tooltip  */
 
 .icon-info{
+  user-select: none;
   visibility: hidden;
   position: absolute;
   top: 64px;
