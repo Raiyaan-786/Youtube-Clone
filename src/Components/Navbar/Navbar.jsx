@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import Profile from "./Profile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faBell, faVideoCamera } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faBell, faUpload, faVideoCamera } from "@fortawesome/free-solid-svg-icons";
 import Notification from "./Notification";
 import Search from "./Search";
 
@@ -45,7 +45,7 @@ const Navbar = ({ Click }) => {
 
          
         <div id="user">
-          <div className="nav-icons"><FontAwesomeIcon icon={faVideoCamera} size="lg" /><span className="icon-info">Create</span></div>
+          <div className="nav-icons"><FontAwesomeIcon icon={faUpload} size="lg" /><span className="icon-info">Create</span></div>
           <div className="nav-icons" onClick={handleNotifications}><FontAwesomeIcon icon={faBell} size="lg" /><span className="icon-info">Notifications</span></div>
           <div className="nav-icons" id="nicon-image" onClick={handleProfileClick} style={{ background: profile ? "blue" : "white", }}>
             <img src="logo/profile.jpeg" alt="" />

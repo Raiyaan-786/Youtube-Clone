@@ -18,14 +18,14 @@
 .sidebar-collapse{
     display: none;
 }
-::-webkit-scrollbar{
+.sidebar-container::-webkit-scrollbar{
     width: 8px;
     
 }
-::-webkit-scrollbar:hover{
+.sidebar-container::-webkit-scrollbar:hover{
     width: 10px;
 }
-::-webkit-scrollbar-thumb:hover {
+.sidebar-container::-webkit-scrollbar-thumb:hover {
     background: #888;
     border-radius: 15px;
 }
