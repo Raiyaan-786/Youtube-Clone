@@ -1,8 +1,8 @@
 import React from 'react'
 import './Home.css'
-import SliderFeed from '../../components/SliderFeed/SliderFeed'
 import MainCard from '../../Components/Cards/MainCard'
 import ShortsCard from '../../Components/Cards/ShortsCard'
+import SliderFeed from '../../Components/SliderFeed/SliderFeed'
 const Home = () => {
   return (
     <div className='home-container'>

@@ -25,7 +25,7 @@ export default function Profile({ profile }) {
         <div className="user-settings">
 
           <div className="user-options">
-            <div className="user-options-icon"><img src="/public/svgIcons/google.svg" alt="" /></div>
+            <div className="user-options-icon"><img src="/svgIcons/google.svg" alt="" /></div>
             <p>Google Account</p>
           </div>
 

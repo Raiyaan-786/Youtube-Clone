@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Sidebar.css'
 import { TbBrandYoutubeKids } from "react-icons/tb";
 import { SiYoutubeshorts,SiYoutubemusic } from "react-icons/si";
 import { MdSubscriptions} from "react-icons/md";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDown, faAngleRight, faBagShopping, faCirclePlay, faCircleQuestion, faClapperboard, faClock, faClockRotateLeft, faExclamationCircle, faFilm, faFire, faFlag, faGamepad, faGear, faGraduationCap, faHeadphones, faHouse, faLightbulb, faMoneyBill, faMusic, faNewspaper, faPaperPlane, faPhotoFilm, faPodcast, faRss, faThumbsUp, faTrophy, faTv, faUserCircle, faUsersCog, faUsersRectangle, faVestPatches, faVideo } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown, faAngleRight, faAngleUp, faBagShopping, faCirclePlay, faCircleQuestion, faClapperboard, faClock, faClockRotateLeft, faExclamationCircle, faFilm, faFire, faFlag, faGamepad, faGear, faGraduationCap, faHeadphones, faHouse, faLightbulb, faMoneyBill, faMusic, faNewspaper, faPaperPlane, faPhotoFilm, faPodcast, faRss, faSliders, faThumbsUp, faTrophy, faTv, faUserCircle, faUsersCog, faUsersRectangle, faVestPatches, faVideo } from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = ({openSidebar}) => {
+  const [OpenShowMore , setOpenShowMore] = useState(false);
+  const [OpenShowSubs , setOpenShowSubs] = useState(false);
+  const ShowMoreHandler = () => {
+    setOpenShowMore(!OpenShowMore);
+  }
+  const ShowSubsHandler = () => {
+    setOpenShowSubs(!OpenShowSubs);
+  }
   return (
     <div>
     <div className={openSidebar?"sidebar-container sidebar-collapse":"sidebar-container "}>
@@ -54,10 +62,38 @@ const Sidebar = ({openSidebar}) => {
           <FontAwesomeIcon icon={faThumbsUp} className='icons'/>
           Liked Videos
         </div> */}
-        <div className='sidebar-content'>
+        {!OpenShowMore && <div className='sidebar-content' onClick={() => ShowMoreHandler()}>
           <FontAwesomeIcon icon={faAngleDown} className='icons'/>
           Show more
+        </div>}
+
+        {OpenShowMore && 
+        <>
+        <div className='sidebar-content'>
+          <FontAwesomeIcon icon={faSliders} className='icons'/>
+          Liked Videos 
+        </div><div className='sidebar-content'>
+          <FontAwesomeIcon icon={faSliders} className='icons'/>
+          Pubg Montage 
         </div>
+        <div className='sidebar-content'>
+          <FontAwesomeIcon icon={faSliders} className='icons'/>
+          20 mins Workout 
+        </div>
+        <div className='sidebar-content'>
+          <FontAwesomeIcon icon={faSliders} className='icons'/>
+          Relax 
+        </div>
+        <div className='sidebar-content'>
+          <FontAwesomeIcon icon={faSliders} className='icons'/>
+          Best Songs 2023 
+        </div>
+        <div className='sidebar-content' onClick={() => ShowMoreHandler()}>
+          <FontAwesomeIcon icon={faAngleUp} className='icons'/>
+          Show Fewer 
+        </div>
+        </>
+        }
       </div>
 
       <hr/>
@@ -84,10 +120,35 @@ const Sidebar = ({openSidebar}) => {
           <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
           Mr Beast
         </div>
-        <div className='sidebar-content'>
+        {!OpenShowSubs && <div className='sidebar-content' onClick={() => ShowSubsHandler()}>
           <FontAwesomeIcon icon={faAngleDown} className='icons sicons'/>
-          Show 43 more
+          Show 4 more
+        </div>}
+
+        {OpenShowSubs && 
+        <>
+        <div className='sidebar-content' onClick={() => ShowSubsHandler()}>
+          <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+          Mr Beast
         </div>
+        <div className='sidebar-content'>
+          <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+          Mr Beast
+        </div>
+        <div className='sidebar-content'>
+          <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+          Mr Beast
+        </div>
+        <div className='sidebar-content'>
+          <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+          Mr Beast
+        </div>
+        <div className='sidebar-content' onClick={() => ShowSubsHandler()}>
+          <FontAwesomeIcon icon={faAngleUp} className='icons'/>
+          Show Fewer
+        </div>
+        </>}
+
       </div>
 
       <hr />
