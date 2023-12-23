@@ -1,10 +1,11 @@
 .notification-menu{
-    overflow-y: scroll;
+  user-select: none;
+  overflow: hidden;
     top: 6px;
     right: 120px;
     position: absolute;
     background-color: #ffffff;
-    height: 640px;
+    height: 644px;
     width: 490px;
     border-radius: 12px;
     box-shadow: 0px 4px 32px 0px rgba(0,0,0,0.1);
@@ -19,7 +20,91 @@
     align-items: center;
     justify-content: space-between;
     height: 48px;
-    width: 95%;
-    padding-left: 15px;
+    padding:0  15px;
+    font-size: 16px;
+    border-radius: 12px 12px 0 0;
     border-bottom: 0.5px solid rgb(228, 226, 226)
+}
+#n-gear-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.1s;
+}
+#n-gear-icon:hover{
+  background-color: #dfdfdf;
+
+}
+.n-menu-items{
+  cursor: pointer;
+  height: 595px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 0 0 12px 12px;
+ 
+}
+  /* css for scrollbar */
+  .n-menu-items::-webkit-scrollbar{
+    width: 8px;
+  }
+  .n-menu-items:hover::-webkit-scrollbar-thumb{
+    /* height: 50px; */
+    background-color: #888;
+  }
+  /* css for scrollbar ends */
+
+.n-menu-item{
+
+  display: flex;
+  min-height: 66px;
+  padding: 16px 16px 16px 0;
+  transition: 2ms;
+}
+.n-menu-item:hover{
+background-color: var(--color-hover);
+}
+.n-menu-item:hover .n-item-3dot{
+color: black;
+}
+.n-item-dot{
+  width: 35px;
+  padding: 12.5px 0px;
+  font-size: 20px;
+  color: blue;
+}
+.n-item-img1{
+border-radius: 50%;
+height: 48px;
+width: 48px;
+}
+.n-item-details{
+  padding: 0 10px;
+}
+.n-item-title{
+padding: 0 4px 0 10px;
+font-size: 14px;
+font-weight: 400;
+width: 234px;
+/* background-color: red; */
+}
+.n-item-time{
+padding: 8px 0 0 10px;
+font-size: 11.5px;
+font-weight: 500;
+color: rgb(94, 94, 94);
+
+}
+.n-item-img2 img{
+  border-radius:4px;
+  height: 50px;
+  width: 86px;
+}
+.n-item-3dot{
+  color: white;
+  font-size: 17px;
+  padding: 4px 15px 0 25px;
 }

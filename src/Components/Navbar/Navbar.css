@@ -73,6 +73,7 @@ nav {
   visibility: visible;
 }
 .icon-badge{
+  user-select: none;
   position: absolute;
   top: 10px;
   right: 97px;
