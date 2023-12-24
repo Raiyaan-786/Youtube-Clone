@@ -12,7 +12,7 @@ export default function NotificationItem(props) {
             </div>
             <img className="n-item-img1" src={props.img1} alt="" />
             <div className="n-item-details">
-                <p className='n-item-title'>{props.title}</p>
+                <p className='n-item-title'>{props.channel} uploaded: {props.title}</p>
                 <p className="n-item-time">{props.time}</p>
             </div>
             <div className="n-item-img2">
