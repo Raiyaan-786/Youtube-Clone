@@ -2,12 +2,12 @@ import React from 'react'
 import './Home.css'
 import MainCard from '../../Components/Cards/MainCard'
 import ShortsCard from '../../Components/Cards/ShortsCard'
-import SliderFeed from '../../Components/SliderFeed/SliderFeed'
-const Home = () => {
+import SliderFeed from '../../components/SliderFeed/SliderFeed'
+const Home = (props) => {
   return (
     <div className='home-container'>
       <div>
-        <SliderFeed/>
+        <SliderFeed openSidebar = {props.openSidebar}/>
       </div>
       <div className='home-items'>
         <MainCard/>

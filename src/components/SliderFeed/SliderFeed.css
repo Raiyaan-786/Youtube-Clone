@@ -6,17 +6,27 @@
     justify-content: center;
     height: 56px;
     position: fixed;
-    width: auto;
-    padding: 0 18px;
-    /* background-color: red; */
-
+    top: 55px;
+    max-width: 80.9vw;
+    overflow: hidden;
+    padding-left: 12px;
 }
 .feed-items{
+    margin: 16.5px;
+    padding-right: 13px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
+.feed-items::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
 .feed-item{
    cursor: pointer;
    background-color:#efefef ;
@@ -27,8 +37,61 @@
    font-size: 14px;
    font-weight: 500;
 }
-.feed-item-active{
+.feed-item.active,.feed-item.active:hover{
     background-color: black;
     color: white;
 }
+.feed-item:hover{
+    background-color: #dfdfdf;
+}
 
+.sliderfeed-icon-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s;
+    font-size: 14px;
+}
+.sliderfeed-icon-right{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s;
+    font-size: 14px;
+}
+.sliderfeed-icon-right:hover,.sliderfeed-icon-left:hover{
+    background-color: #dfdfdf;
+}
+
+.sliderfeed-hider-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to right,white 50%, transparent);
+    height: 100%;
+    width: 121px;
+    padding: 0 13px;
+}
+.sliderfeed-hider-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(to left,white 50%, transparent);
+    height: 100%;
+    width: 121px;
+    padding: 0 13px;
+}
